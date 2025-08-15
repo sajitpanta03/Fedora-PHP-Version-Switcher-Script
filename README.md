@@ -21,8 +21,7 @@ A bash script to easily switch between different PHP versions on Fedora/RHEL/Cen
 
 1. Download the script:
 ```bash
-curl -O https://gist.githubusercontent.com/yourusername/scriptid/raw/switch-php.sh
-Make it executable:
+
 
 bash
 chmod +x switch-php.sh
@@ -60,13 +59,6 @@ If you encounter GLIBC version errors:
 bash
 sudo dnf upgrade glibc
 sudo dnf distro-sync
-Repository Issues
-If no PHP versions appear:
-
-bash
-sudo dnf install https://rpms.remirepo.net/fedora/remi-release-$(rpm -E %fedora).rpm
-Partial Upgrades
-If the wrong version remains installed:
 
 bash
 sudo dnf remove php-\* -y
