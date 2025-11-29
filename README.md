@@ -47,6 +47,7 @@ Available PHP versions:
 4) remi-8.2
 5) remi-8.3
 6) remi-8.4
+7) remi-8.5
 Enter the number of PHP version to enable: 6
 Switching to PHP version: remi-8.4
 ...
