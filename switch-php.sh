@@ -60,6 +60,12 @@ dnf module enable "php:$SELECTED_STREAM" -y
 echo "Installing PHP core packages..."
 dnf install -y php-cli php-common php-fpm
 
+echo "Installing PHP pdo ..."
+dnf install -y php-pdo php-mysqlnd
+
+echo "Installing additional PHP modules..."
+dnf install -y php-{mbstring,xml,gd,json,zip,curl,bcmath,opcache}
+
 # Verify installation
 if ! command -v php &> /dev/null; then
     echo "PHP installation failed! Trying alternative method..."
